@@ -66,6 +66,16 @@ body{margin:0;background:#110910}
 @keyframes twinkle{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.2)}}
 @media (prefers-reduced-motion: reduce){.lp *,.lp *::before{animation:none !important;transition:none !important}}
 </style>
+<style>
+.bgm{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:.6rem;padding:.8rem 1.2rem;border-radius:999px;border:1px solid #D9B07A;background:rgba(17,9,16,.85);color:#F7E9EE;font:700 1rem 'Zen Kaku Gothic New',sans-serif;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 6px 20px rgba(0,0,0,.4);min-height:48px}
+.bgm .eq{display:flex;align-items:flex-end;gap:3px;height:16px}
+.bgm .eq i{width:3px;height:4px;background:#E8407A;border-radius:2px}
+.bgm.on{border-color:#E8407A}
+.bgm.on .eq i{animation:eq .9s ease-in-out infinite}
+.bgm.on .eq i:nth-child(2){animation-delay:.2s}.bgm.on .eq i:nth-child(3){animation-delay:.4s}.bgm.on .eq i:nth-child(4){animation-delay:.1s}
+@keyframes eq{0%,100%{height:4px}50%{height:16px}}
+@media (prefers-reduced-motion: reduce){.bgm.on .eq i{animation:none;height:12px}}
+</style>
 </head>
 <body>
 <div class="lp" style="--accent: #E8407A">
@@ -212,5 +222,11 @@ body{margin:0;background:#110910}
 
 </div>
 </div>
+<audio id="bgm" src="bgm.mp3" loop preload="none"></audio>
+<button class="bgm" id="bgmBtn" type="button" aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="bgmLabel">BGMを流す</span></button>
+<script>
+(function(){var a=document.getElementById('bgm'),b=document.getElementById('bgmBtn'),l=document.getElementById('bgmLabel');a.volume=.6;
+b.addEventListener('click',function(){if(a.paused){a.play().then(function(){b.classList.add('on');b.setAttribute('aria-pressed','true');l.textContent='BGMを止める';}).catch(function(){l.textContent='再生できませんでした';});}else{a.pause();b.classList.remove('on');b.setAttribute('aria-pressed','false');l.textContent='BGMを流す';}});})();
+</script>
 </body>
 </html>
