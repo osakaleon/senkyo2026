@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>夜遊び交流倶楽部 シティヘブン総選挙2026 応援サイト</title>
-<meta name="description" content="夜遊び交流倶楽部が応援するシティヘブン総選挙2026のエントリー紹介と投票ページへのリンク集です。">
+<title>夜遊び交流倶楽部 シティヘブン総選挙2026 本選応援サイト</title>
+<meta name="description" content="夜遊び交流倶楽部が応援するシティヘブン総選挙2026。地方予選の結果と、ブロック本選に向けた応援ページです。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://osakaleon.github.io/senkyo2026/">
-<meta property="og:title" content="夜遊び交流倶楽部 シティヘブン総選挙2026 応援サイト">
-<meta property="og:description" content="推しの子に、あなたの一票を。エントリー紹介と投票ページへのリンクはこちら。">
+<meta property="og:title" content="夜遊び交流倶楽部 シティヘブン総選挙2026 本選応援サイト">
+<meta property="og:description" content="地方予選の結果発表と、11月17日スタートのブロック本選に向けた応援ページです。">
 <meta property="og:image" content="https://osakaleon.github.io/senkyo2026/ogp10.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -85,6 +85,12 @@ body{margin:0;background:#110910}
 @keyframes pop{0%{opacity:0;transform:scale(.3) rotate(-8deg)}100%{opacity:1;transform:none}}
 @keyframes bob{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-6px) rotate(4deg)}}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.ranks{width:100%;display:flex;flex-direction:column;gap:.5rem;margin-top:.25rem}
+.rank{margin:0;display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.65rem 1rem;border-radius:14px;border:1px solid rgba(217,176,122,.5);background:rgba(217,176,122,.08);text-align:left}
+.rcat{font-size:.95rem;color:#E3CCD5;line-height:1.4}
+.rnum{flex:none;font-family:'Shippori Mincho B1',serif;font-size:1.35rem;font-weight:800;color:#F4DDB0}
+.rank.top{background:linear-gradient(110deg,#B8894F 0%,#F4DDB0 25%,#D9B07A 50%,#F4DDB0 75%,#B8894F 100%);background-size:250% 100%;border-color:#F4DDB0;animation:shine 2.6s linear infinite;box-shadow:0 0 22px rgba(244,221,176,.45)}
+.rank.top .rcat,.rank.top .rnum{color:#2A1520}
 @media (prefers-reduced-motion: reduce){.lp *,.lp *::before{animation:none !important;transition:none !important}}
 </style>
 <style>
@@ -115,23 +121,17 @@ body{margin:0;background:#110910}
 <span class="spark" style="top: 62%; right: 6%; animation-delay: 2.2s"></span>
 <p class="eyebrow">CITYHEAVEN ELECTION 2026</p>
 <h1 class="title mincho"><span class="club">夜遊び交流倶楽部</span><span class="main">シティヘブン総選挙2026</span><span class="main">応援サイト</span></h1>
-<p class="lead">推しの子に、あなたの一票を。<br>各カードのボタンから投票ページへ移動できます。</p>
+<p class="lead">地方予選、たくさんの応援ありがとうございました。<br>次はブロック本選。推しの子に、もう一度あなたの一票を。</p>
 <div class="badges">
-<span class="badge">地方予選 10月28日（水）12:00〜11月3日（火）</span>
-<span class="badge sub">ブロック本選 11月17日（火）〜11月23日（月）</span>
-<span class="badge hot">予選突破の目安は50人からの投票</span>
+<span class="badge">ブロック本選 11月17日（火）12:00〜11月23日（月）</span>
+<span class="badge sub">本選結果発表 12月2日（水）予定</span>
+<span class="badge hot">本選の目安は200人からの投票</span>
 </div>
 <div class="line"></div>
 </header>
 
-<section class="mv">
-<h2 class="h2 mincho"><small>MUSIC VIDEO</small>星空のグランプリ</h2>
-<div class="mvbox"><video id="mv" src="mv.mp4" poster="mv-poster.jpg" controls playsinline preload="none"></video></div>
-<p class="mvcap">応援ソングのミュージックビデオ。<br>再生すると音が出ます。</p>
-</section>
-
 <section style="display: flex; flex-direction: column; gap: 2rem">
-<h2 class="h2 mincho"><small>ENTRY</small>エントリー紹介</h2>
+<h2 class="h2 mincho"><small>RESULT</small>地方予選 結果発表</h2>
 <div class="grid">
 
 <article class="card win" style="--i: 0">
@@ -141,8 +141,8 @@ body{margin:0;background:#110910}
 <p class="entry">ENTRY No.1</p>
 <h3 class="name">ひなこ</h3>
 <p class="store">ロイヤル女子寮（広島・中区）</p>
+<div class="ranks"><p class="rank"><span class="rcat">広島県 うちは地元が好きじゃけぇ♪部門</span><span class="rnum">第7位</span></p></div>
 <div class="btns">
-<a class="vote" href="https://www.cityheaven.net/hiroshima/A3401/A340101/royal/girlid-64522519/touhyou/?id=7219&amp;no=11&amp;date=1793159950999&amp;mode=sp" target="_blank" rel="noopener">ひなこに投票する</a>
 <a class="prof" href="https://www.cityheaven.net/hiroshima/A3401/A340101/royal/girlid-64522519/?lo=1" target="_blank" rel="noopener">プロフィールを見る</a>
 </div>
 </article>
@@ -154,8 +154,8 @@ body{margin:0;background:#110910}
 <p class="entry">ENTRY No.2</p>
 <h3 class="name">あすな</h3>
 <p class="store">まじらぶ！（茨城・土浦市）</p>
+<div class="ranks"><p class="rank"><span class="rcat">茨城県 土浦ソープ部門</span><span class="rnum">第9位</span></p></div>
 <div class="btns">
-<a class="vote" href="https://www.cityheaven.net/ibaraki/A0802/A080202/maji-love/girlid-61607052/touhyou/?id=7017&amp;no=10&amp;date=1793160084718&amp;mode=sp" target="_blank" rel="noopener">あすなに投票する</a>
 <a class="prof" href="https://www.cityheaven.net/ibaraki/A0802/A080202/maji-love/girlid-61607052/?lo=1" target="_blank" rel="noopener">プロフィールを見る</a>
 </div>
 </article>
@@ -167,8 +167,8 @@ body{margin:0;background:#110910}
 <p class="entry">ENTRY No.3</p>
 <h3 class="name">ゆゆ</h3>
 <p class="store">アラカルト Alacarte（千葉・栄町）</p>
+<div class="ranks"><p class="rank"><span class="rcat">千葉県 巨乳部門</span><span class="rnum">第8位</span></p></div>
 <div class="btns">
-<a class="vote" href="https://www.cityheaven.net/chiba/A1201/A120101/alacarte/girlid-55705521/touhyou/?id=7036&amp;no=17&amp;date=1793160018403&amp;mode=sp" target="_blank" rel="noopener">ゆゆに投票する</a>
 <a class="prof" href="https://www.cityheaven.net/chiba/A1201/A120101/alacarte/girlid-55705521/?lo=1" target="_blank" rel="noopener">プロフィールを見る</a>
 </div>
 </article>
@@ -180,8 +180,8 @@ body{margin:0;background:#110910}
 <p class="entry">ENTRY No.4</p>
 <h3 class="name">いちご</h3>
 <p class="store">ファッションヘルス パピヨン（名古屋駅周辺）</p>
+<div class="ranks"><p class="rank"><span class="rcat">愛知県 総合</span><span class="rnum">第7位</span></p><p class="rank"><span class="rcat">愛知県 かわいい部門</span><span class="rnum">第2位</span></p></div>
 <div class="btns">
-<a class="vote" href="https://www.cityheaven.net/aichi/A2301/A230101/papi/girlid-59643304/touhyou/?id=7118&amp;no=18&amp;date=1793179233017&amp;mode=sp" target="_blank" rel="noopener">いちごに投票する</a>
 <a class="prof" href="https://www.cityheaven.net/aichi/A2301/A230101/papi/girlid-59643304/?lo=1" target="_blank" rel="noopener">プロフィールを見る</a>
 <a class="prof" href="https://x.com/chyusiyo01" target="_blank" rel="noopener">X（旧Twitter）を見る</a>
 </div>
@@ -194,8 +194,8 @@ body{margin:0;background:#110910}
 <p class="entry">ENTRY No.5</p>
 <h3 class="name">みなみ</h3>
 <p class="store">VEGAS（山梨・甲府）</p>
+<div class="ranks"><p class="rank"><span class="rcat">山梨県 自慢のおっぱい部門</span><span class="rnum">第2位</span></p></div>
 <div class="btns">
-<a class="vote" href="https://www.cityheaven.net/yamanashi/A1901/A190101/kofu-broadway/girlid-53399206/touhyou/?id=6924&amp;no=4&amp;date=1793179294785&amp;mode=sp" target="_blank" rel="noopener">みなみに投票する</a>
 <a class="prof" href="https://www.cityheaven.net/yamanashi/A1901/A190101/kofu-broadway/girlid-53399206/" target="_blank" rel="noopener">プロフィールを見る</a>
 </div>
 </article>
@@ -205,8 +205,8 @@ body{margin:0;background:#110910}
 <p class="entry">ENTRY No.6</p>
 <h3 class="name">はつこい</h3>
 <p class="store">The White（神戸・福原）</p>
+<div class="ranks"><p class="rank"><span class="rcat">兵庫県 総合</span><span class="rnum">第9位</span></p><p class="rank top"><span class="rcat">兵庫県 店長オススメ部門</span><span class="rnum">第1位</span></p></div>
 <div class="btns">
-<a class="vote" href="https://www.cityheaven.net/hyogo/A2801/A280101/the_white/girlid-58138823/touhyou/?id=7188&amp;no=28&amp;date=1793182057099&amp;mode=sp" target="_blank" rel="noopener">はつこいに投票する</a>
 <a class="prof" href="https://www.cityheaven.net/hyogo/A2801/A280101/the_white/girlid-58138823/?lo=1" target="_blank" rel="noopener">プロフィールを見る</a>
 <a class="prof" href="https://x.com/Hatukoiw05z" target="_blank" rel="noopener">X（旧Twitter）を見る</a>
 </div>
@@ -219,8 +219,8 @@ body{margin:0;background:#110910}
 <p class="entry">ENTRY No.7</p>
 <h3 class="name">ひなみ</h3>
 <p class="store">ESSENCE（神奈川・川崎）</p>
+<div class="ranks"><p class="rank"><span class="rcat">神奈川県 ルックス抜群部門</span><span class="rnum">第22位</span></p></div>
 <div class="btns">
-<a class="vote" href="https://www.cityheaven.net/kanagawa/A1403/A140301/cecilplus/girlid-66043299/touhyou/?id=7074&amp;no=28&amp;date=1793376113655&amp;mode=sp" target="_blank" rel="noopener">ひなみに投票する</a>
 <a class="prof" href="https://www.cityheaven.net/kanagawa/A1403/A140301/cecilplus/girlid-66043299/" target="_blank" rel="noopener">プロフィールを見る</a>
 </div>
 </article>
@@ -229,35 +229,41 @@ body{margin:0;background:#110910}
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 2rem">
-<h2 class="h2 mincho"><small>HOW TO VOTE</small>投票のポイント</h2>
+<h2 class="h2 mincho"><small>HOW TO VOTE</small>本選の投票ポイント</h2>
 <div>
 <div class="points">
 <div class="point" style="--i: 0">
 <p class="pnum">POINT 1</p>
-<h3 class="ptitle">毎日最大10票</h3>
-<p class="ptext">同じ女の子には1日10票まで。50票すべて使うには最低5日間かかります。毎日忘れずに。</p>
+<h3 class="ptitle">チケットはあらためて最大50枚</h3>
+<p class="ptext">予選のチケットは持ち越せませんが、本選の初日に予選と同じ枚数があらためて付与されます。期間中の「みたよ」で最大10枚追加。</p>
 </div>
 <div class="point" style="--i: 1">
 <p class="pnum">POINT 2</p>
-<h3 class="ptitle">大事なのは「50人」</h3>
-<p class="ptext">予選突破に必要なのは50票ではなく50人からの投票。1人1票でも力になります。</p>
+<h3 class="ptitle">毎日最大10票</h3>
+<p class="ptext">同じ女の子には1日10票まで。50票すべて使うには最低5日間かかります。初日から毎日コツコツと。</p>
 </div>
 <div class="point" style="--i: 2">
 <p class="pnum">POINT 3</p>
-<h3 class="ptitle">「みたよ」でチケット追加</h3>
-<p class="ptext">事前ミッションで最大40枚。期間中に「みたよ」を押すと1回1枚、最大10枚追加されます。</p>
+<h3 class="ptitle">大事なのは「人数」</h3>
+<p class="ptext">本選は200人からの投票が目安と案内されています。1人1票でも大きな力になるので、周りの人にも声をかけてください。</p>
 </div>
 <div class="point" style="--i: 3">
 <p class="pnum">POINT 4</p>
-<h3 class="ptitle">予選チケットは使い切り</h3>
-<p class="ptext">11月3日までに使わなかった分は持ち越せません。本選用チケットは別に付与されるので、予選で全部使ってOK。</p>
+<h3 class="ptitle">ネット予約で最大3倍</h3>
+<p class="ptext">本選期間中にネット予約から利用するか、2026年1月以降のネット予約利用が4回以上あると、得票が最大3倍で集計されます。</p>
 </div>
 </div>
 <div class="note">
-<h3 class="ptitle">知っておきたいこと</h3>
-<p class="ntext">・ネット予約で得票数が最大3倍。条件は「投票先と予約先が同じキャスト」「自分自身のWEBネット予約」の2つ（電話予約や店舗側入力は対象外）<br>・倍率は投票時ではなく集計時に反映<br>・投票先は全国どのキャストでもOK。複数の子への分散投票も可能<br>・誰が何票投票したかは店舗・キャストには開示されません。投票したことを伝えたい場合は、オキニトークや来店時に直接どうぞ<br>・本選用チケット（最大50枚）は予選とは別にあらためて付与されます</p>
+<h3 class="ptitle">投票のしかた</h3>
+<p class="ntext">・各カードの「プロフィールを見る」から女の子のページを開き、投票ボタンを押してください<br>・投票ボタンは投票開始時刻（11月17日12:00）になるまで表示されません<br>・投票先は全国どのキャストでもOK。複数の子への分散投票も可能<br>・誰が何票投票したかは、店舗・キャストには開示されません</p>
 </div>
 </div>
+</section>
+
+<section class="mv">
+<h2 class="h2 mincho"><small>MUSIC VIDEO</small>星空のグランプリ</h2>
+<div class="mvbox"><video id="mv" src="mv.mp4" poster="mv-poster.jpg" controls playsinline preload="none"></video></div>
+<p class="mvcap">応援ソングのミュージックビデオ。<br>再生すると音が出ます。</p>
 </section>
 
 <footer class="foot">
